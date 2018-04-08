@@ -142,6 +142,6 @@ Remove-Item $Path\$Installer
 
 # Create a PowerShell ISE Shortcut on the Desktop
 $WshShell = New-Object -ComObject WScript.Shell
-$Shortcut = $WshShell.CreateShortcut("$env:SystemDrive\Users\demouser\Desktop\PowerShell ISE.lnk")
-$Shortcut.TargetPath = "$env:windir\system32\WindowsPowerShell\v1.0\PowerShell_ISE.exe"
+$Shortcut = $WshShell.CreateShortcut("C:\Users\Public\Public Desktop\PowerShell ISE.lnk")
+$Shortcut.TargetPath = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell_ise.exe"
 $Shortcut.Save()
